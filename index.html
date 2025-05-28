@@ -9,16 +9,34 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>Seven Seas Spa</title>
-    <style>
-      .navbar, .navbar .nav-link, .navbar .navbar-brand {
-        color: #3B2F2F !important;
-      }
-      .navbar .nav-link.active {
-        color: #3B2F2F !important;
-        font-weight: bold;
-      }
+  <style>
+       .navbar-custom {
+            color: #3B2F2F;
+        }
+
+        .navbar-custom .nav-link {
+            color: #3B2F2F;
+        }
+
+        .navbar-custom .nav-link.active {
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero.png') no-repeat center center;
+            background-size: cover;
+            color: #FFEBD4;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-family: 'Handlee', cursive;
+        }
+
+        .btn {
+            color: #3B2F2F;
+        }
     </style>
   </head>
   <body>
@@ -59,10 +77,134 @@
         </div>
       </div>
     </nav>
+
+    <!-- Responsive Bootstrap 5 Hero Section -->
+  
+<div class="container-fluid hero-section text-center">
+        <h1 class="display-4">Welcome to Seven Seas Spa</h1>
+        <p class="lead">We are dedicated to improving your overall wellbeing.</p>
+        <a href="#" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+
+    <!-- Our Services Section -->
+<section class="py-5 bg-white" id="services">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Services</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/yoga.png" class="card-img-top" alt="Service 1" style="height:200px; object-fit:cover;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Massage Therapy</h5>
+            <p class="card-text">Relax and rejuvenate with our signature massages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/nutrition.png" class="card-img-top" alt="Service 2" style="height:200px; object-fit:cover;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Facial Treatments</h5>
+            <p class="card-text">Glow with our personalized facial care routines.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/mental_health.png" class="card-img-top" alt="Service 3" style="height:200px; object-fit:cover;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Body Scrubs</h5>
+            <p class="card-text">Exfoliate and renew your skin with our scrubs.</p>
+          </div></div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/wellness.png" class="card-img-top" alt="Service 4" style="height:200px; object-fit:cover;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Aromatherapy</h5>
+            <p class="card-text">Soothe your senses with essential oils and aromas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wellness Tips Section -->
+<section class="py-5 bg-white" id="wellness">
+  <div class="container">
+    <h2 class="text-center mb-5">Wellness Tips</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul class="list fs-5">
+          <li class="list-item bg-white"><strong>Stay Active:</strong>Regular physical activity can improve your mood and reduce feelings of anxiety.</li>
+          <li class="list-item bg-white"><strong>Eat Healthy:</strong> A balanced diet can help you maintain a healthy weight and reduce your risk of chronic diseases.</li>
+          <li class="list-item bg-white"><strong>Get enough sleep:</strong> Good sleep is essential for your physical health and mental wellbeing.</li>
+          <li class="list-item bg-white"><strong>Manage stress:</strong> Techniques such as meditation and deep breathing can help you manage stress and improve your mental health.</li>
+          <li class="list-item bg-white"><strong>Stay hydrated:</strong> Drinking enough water can improve your energy levels and brain function.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-5 bg-white" id="testimonials">
+  <div class="container">
+    <h2 class="text-center mb-5">Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:400px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="assets/images/emily_johnson.png" class="rounded-circle mx-auto d-block mb-3" alt="Client 1" style="width:100px; height:100px; object-fit:cover;">
+          <blockquote class="blockquote">
+            <p class="mb-4">"Absolutely the best spa experience I've ever had! Highly recommend."</p>
+            <footer class="blockquote-footer">Sarah M.</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="assets/images/john_doe.png" class="rounded-circle mx-auto d-block mb-3" alt="Client 2" style="width:100px; height:100px; object-fit:cover;">
+          <blockquote class="blockquote">
+            <p class="mb-4">"Professional staff and relaxing atmosphere. I feel renewed every visit."</p>
+            <footer class="blockquote-footer">James L.</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center">
+          <img src="assets/images/jane_smith.png" class="rounded-circle mx-auto d-block mb-3" alt="Client 3" style="width:100px; height:100px; object-fit:cover;">
+          <blockquote class="blockquote">
+            <p class="mb-4">"A wonderful escape from daily stress. The treatments are amazing!"</p>
+            <footer class="blockquote-footer">Priya S.</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4" style="background-color: #6F4E37;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="text-white ms-md-auto mb-3 mb-md-0" style="color: #FFEBD4 !important;">
+      &copy; 2022 Seven Seas Spa
+    </div>
+    <div class="d-flex gap-3">
+      <a href="#" class="text-decoration-none" style="color: #FFEBD4;"><i class="bi bi-facebook fs-4"></i></a>
+      <a href="#" class="text-decoration-none" style="color: #FFEBD4;"><i class="bi bi-twitter fs-4"></i></a>
+      <a href="#" class="text-decoration-none" style="color: #FFEBD4;"><i class="bi bi-instagram fs-4"></i></a>
+      <a href="#" class="text-decoration-none" style="color: #FFEBD4;"><i class="bi bi-linkedin fs-4"></i></a>
+    </div>
+  </div>
+</footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+   <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </body>
 </html>

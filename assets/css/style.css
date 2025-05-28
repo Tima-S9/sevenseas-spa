@@ -1,0 +1,6 @@
+.hero-section {
+  background: url('../images/hero.png') center center/cover no-repeat;
+  min-height: 400px;
+  width: 100%;
+  position: relative;
+}
